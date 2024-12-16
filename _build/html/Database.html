@@ -18,7 +18,8 @@
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Recherche" href="search.html" /> 
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="prev" title="Questionnaire" href="Questionnaire.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,12 +42,16 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Options/Inscription.html">Inscription</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Options/Connexion.html">Connexion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Options/Selection.html">Selection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Options/Questionnaire.html">Questionnaire</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Options/Database.html">Database</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Inscription.html">Inscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Connexion.html">Connexion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Selection.html">Selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Questionnaire.html">Questionnaire</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Database</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pgadmin">PgAdmin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#informations-sur-les-tables">Informations sur les tables</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -75,12 +80,80 @@
              
   <section id="database">
 <h1>Database<a class="headerlink" href="#database" title="Lien vers cette rubrique"></a></h1>
+<p>L'application GeoAIVision est reliée à une base de données PostgreSQL hébergée sur un serveur Amazon (AWS).
+À chaque fois qu'une nouvelle information est renseignée, les mises à jour sont automatiquement poussées vers cette base de données.</p>
+<section id="pgadmin">
+<h2>PgAdmin<a class="headerlink" href="#pgadmin" title="Lien vers cette rubrique"></a></h2>
+<p>Pour interagir avec la base de données, utilisez <strong>PgAdmin</strong> en suivant les étapes ci-dessous :</p>
+<ol class="arabic">
+<li><p><strong>Ouvrir PgAdmin</strong>
+.. image:: pgadmin.jpg</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">alt<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Interface de démarrage de PgAdmin</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p><strong>Cliquer sur &quot;Add Server&quot;</strong>
+.. image:: server.jpg</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">alt<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Ajouter un nouveau serveur</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p><strong>Configurer les informations de connexion</strong>
+La page suivante s'ouvre, où vous pouvez renseigner les informations de connexion.
+.. image:: connect.jpg</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">alt<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Page de configuration des connexions</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p><strong>Cliquer sur &quot;Save&quot;</strong>
+.. image:: connects.jpg</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">alt<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Sauvegarde des informations de connexion</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+<li><p><strong>Installation de l'extension PostGIS</strong>
+PostgreSQL gère les données géographiques via l'extension PostGIS. Le processus d'installation de cette extension est illustré ci-dessous :
+.. image:: extens.jpg</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">alt<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Installation de PostGIS</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ol>
+<p>La base de données <strong>hackaton_2024</strong> a été codée en SQL. Elle contient les tables suivantes :
+<cite>polygones</cite>, <cite>zones</cite>, <cite>fusions</cite>, <cite>modifications</cite>, <cite>suppressions</cite>, <cite>créations</cite>, <cite>utilisateurs</cite>, et <cite>divisions</cite>.</p>
+</section>
+<section id="informations-sur-les-tables">
+<h2>Informations sur les tables<a class="headerlink" href="#informations-sur-les-tables" title="Lien vers cette rubrique"></a></h2>
+<p>Voici un aperçu des principales tables de la base de données et de leur rôle :</p>
+</section>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="Questionnaire.html" class="btn btn-neutral float-left" title="Questionnaire" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+    </div>
 
   <hr/>
 

@@ -18,7 +18,8 @@
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Recherche" href="search.html" /> 
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Inscription" href="Inscription.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -40,12 +41,15 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Bienvenue dans la documentation de GeoAIVision!</a></li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Inscription.html">Inscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Connexion.html">Connexion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Selection.html">Selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Questionnaire.html">Questionnaire</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Database.html">Database</a></li>
 </ul>
-</div>
+
         </div>
       </div>
     </nav>
@@ -72,26 +76,50 @@
              
   <section id="bienvenue-dans-la-documentation-de-geoaivision">
 <h1>Bienvenue dans la documentation de GeoAIVision!<a class="headerlink" href="#bienvenue-dans-la-documentation-de-geoaivision" title="Lien vers cette rubrique"></a></h1>
-<p>GeoAIVision est une application mobile conçue pour traiter des fichiers shapefile. Son objectif est de permettre à l'utilisateur, tel qu'un agent cartographe, de modifier la structure des polygones d'un shapefile et d'ajouter des informations pertinentes (maison habité ou pas, nombre de personnes,...) concernant ces éléments géographiques.</p>
+<p>GeoAIVision est une application mobile conçue pour traiter des fichiers shapefile. Son objectif est de permettre à l'utilisateur, tel qu'un agent cartographe, de modifier la structure des polygones d'un shapefile et d'ajouter des informations pertinentes (maison habitée ou pas, nombre de personnes, etc.) concernant ces éléments géographiques.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>La version la plus aboutie de l'application se trouve dans la branche final_app de ce dépôt GitHub <a class="reference external" href="https://github.com/Mafieuu/SenMapEditor/tree/final_app">https://github.com/Mafieuu/SenMapEditor/tree/final_app</a> , dans le dossier _finalapp. Elle comporte une page de connexion, un bouton pour se déconnecter, un bouton pour sauvegarder les modifications, ainsi que les fonctionnalités de création et de suppression de polygones. De plus, elle utilise une base de données locale SQLite similaire à celle présente sur AWS, abandonnant les fichiers GeoJSON au profit de SQLite pour faciliter le transfert des données modifiées par l'utilisateur de son appareil mobile vers le cloud.</p>
+<p>La version la plus aboutie de l'application se trouve dans la branche <cite>final_app</cite> de ce dépôt GitHub :
+<cite>https://github.com/Mafieuu/SenMapEditor/tree/final_app</cite> dans le dossier <cite>_finalapp</cite>. Elle comporte :</p>
+<ul class="simple">
+<li><p>Une page de connexion</p></li>
+<li><p>Un bouton pour se déconnecter</p></li>
+<li><p>Un bouton pour sauvegarder les modifications</p></li>
+<li><p>Les fonctionnalités de création et de suppression de polygones.</p></li>
+</ul>
+<p>De plus, elle utilise une base de données locale <strong>SQLite</strong>, similaire à celle présente sur AWS. Cela permet d'abandonner les fichiers GeoJSON au profit de <strong>SQLite</strong> pour faciliter le transfert des données modifiées par l'utilisateur de son appareil mobile vers le cloud.</p>
+<p>Malheureusement, cette version comporte un bug qui empêche l'utilisateur de se connecter. Nous tentons de résoudre ce problème, mais en raison des contraintes de temps et des exigences académiques de notre école, nous n'avons pas encore réussi. Par conséquent, nous nous rabattons sur une version moins sophistiquée de notre application, située dans la branche <strong>main</strong> dans le dossier <cite>senmapeditor</cite>.</p>
 </div>
-<p>Malheureusement, cette version comporte un bug qui empêche l'utilisateur de se connecter. Nous tentons de résoudre ce problème, mais en raison des contraintes de temps et des exigences académiques de notre école, nous n'avons pas encore réussi. Par conséquent, nous sommes contraints de nous rabattre sur une version moins sophistiquée de notre application, qui se trouve dans la branche main dans le dossier senmapeditor.</p>
 <div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Inscription.html">Inscription</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Connexion.html">Connexion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Selection.html">Selection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Questionnaire.html">Questionnaire</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Database.html">Database</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Database.html#pgadmin">PgAdmin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Database.html#informations-sur-les-tables">Informations sur les tables</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </section>
 <section id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Lien vers cette rubrique"></a></h1>
-<p><a href="#id1"><span class="problematic" id="id2">*</span></a><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a>
-<a href="#id3"><span class="problematic" id="id4">*</span></a><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Index du module</span></a>
-<a href="#id5"><span class="problematic" id="id6">*</span></a><a class="reference internal" href="search.html"><span class="std std-ref">Page de recherche</span></a></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Index du module</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Page de recherche</span></a></p></li>
+</ul>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="Inscription.html" class="btn btn-neutral float-right" title="Inscription" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
