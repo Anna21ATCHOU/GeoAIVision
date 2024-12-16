@@ -14,7 +14,6 @@ build:
 sphinx:
   builder: html
   configuration: docs/conf.py
-  output: $READTHEDOCS_OUTPUT/html
 
 # Optionally, but recommended,
 # declare the Python requirements required to build your documentation
@@ -22,5 +21,6 @@ sphinx:
 python:
   install:
     - requirements: docs/requirements.txt
+
 
 
