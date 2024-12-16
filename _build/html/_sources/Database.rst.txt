@@ -11,25 +11,25 @@ Pour interagir avec la base de données, utilisez **PgAdmin** en suivant les ét
 
 1. **Ouvrir PgAdmin**  
    .. image:: pgadmin.jpg  
-      :alt: Interface de démarrage de PgAdmin  
+       
 
 2. **Cliquer sur "Add Server"**  
    .. image:: server.jpg  
-      :alt: Ajouter un nouveau serveur  
+        
 
 3. **Configurer les informations de connexion**  
    La page suivante s'ouvre, où vous pouvez renseigner les informations de connexion.  
    .. image:: connect.jpg  
-      :alt: Page de configuration des connexions  
+       
 
 4. **Cliquer sur "Save"**  
    .. image:: connects.jpg  
-      :alt: Sauvegarde des informations de connexion  
+       
 
 5. **Installation de l'extension PostGIS**  
    PostgreSQL gère les données géographiques via l'extension PostGIS. Le processus d'installation de cette extension est illustré ci-dessous :  
    .. image:: extens.jpg  
-      :alt: Installation de PostGIS  
+       
 
 La base de données **hackaton_2024** a été codée en SQL. Elle contient les tables suivantes :  
 `polygones`, `zones`, `fusions`, `modifications`, `suppressions`, `créations`, `utilisateurs`, et `divisions`.
@@ -40,7 +40,7 @@ Informations sur les tables
 Voici un aperçu des principales tables de la base de données et de leur rôle :
 
 ===============   ===========================================================================
-**Nom de la table**    **Description**
+Nom de la table    Description
 ===============   ===========================================================================
 **zone**               Les informations sur les données shapefiles et les rasters.
 **polygones**          Les informations sur les polygones.
